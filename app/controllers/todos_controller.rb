@@ -28,7 +28,7 @@ class TodosController < ApplicationController
 
     respond_to do |format|
       if @todo.save
-        flash[:success] = 'Todo was succesffuly created.'
+        flash[:success] = 'Todo was succesfully created.'
         format.html { redirect_to @todo }
         format.json { render :show, status: :created, location: @todo }
       else
